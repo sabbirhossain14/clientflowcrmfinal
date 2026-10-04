@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import helmet from 'helmet';
+import { default as helmet } from 'helmet';
 import cookieParser from 'cookie-parser';
-import rateLimit from 'express-rate-limit';
+import { rateLimit } from 'express-rate-limit';
 import morgan from 'morgan';
 import { connectDB } from './config/db.js';
 import routes from './routes/index.js';
